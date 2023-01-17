@@ -20,3 +20,4 @@ class PledgeSerializer(serializers.ModelSerializer):
         model = Pledge
         fields = ['id', 'amount', 'comment', 'anonymous', 'project', 'supporter'] #or fields = '__all__'
         
+class ProjectDetailSerializer(ProjectSerializer):pledges = PledgeSerializer(many=True, read_only=True)
