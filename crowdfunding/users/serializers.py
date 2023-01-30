@@ -1,7 +1,6 @@
 from rest_framework import serializers
 from .models import CustomUser
 
-
 class CustomUserSerializer(serializers.Serializer):
     id = serializers.ReadOnlyField()
     username = serializers.CharField(max_length=150)
