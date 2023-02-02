@@ -1,4 +1,4 @@
-# {{ my project title }}
+# {{ Project Title:  }}
 
 {{ a paragraph detailing the purpose and target audience }}
 
@@ -74,7 +74,7 @@
 
 ### Handle failed requests gracefully 
 
-- [ ] 404 response returns JSON rather than text
+- [x] 404 response returns JSON rather than text
 
 ### Use token authentication
 
@@ -99,9 +99,11 @@
 - [ ] django-filter
 
 
-## Part A Submission
+## Part A Submission ()
 
-- [ ] A link to the deployed project.
+
+
+- [X] A link to the deployed project (https://small-smoke-3626.fly.dev/projects)
 - [ ] A screenshot of Insomnia, demonstrating a successful GET method for any endpoint.
 - [ ] A screenshot of Insomnia, demonstrating a successful POST method for any endpoint.
 - [ ] A screenshot of Insomnia, demonstrating a token being returned.
