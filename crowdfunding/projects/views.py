@@ -63,6 +63,11 @@ class ProjectDetail(APIView):
                 return Response(serializer.data)
             return Response(serializer.errors)
 
+    def delete(self, request, pk):
+        project = self.get_object(pk)
+        project.delete()
+        return Response("Project Deleted", status=status.HTTP_204_NO_CONTENT)
+
 class PledgeList(generics.ListCreateAPIView):
     queryset= Pledge.objects.all()
     serializer_class = PledgeSerializer
