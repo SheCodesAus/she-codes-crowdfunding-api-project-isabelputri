@@ -1,6 +1,6 @@
-# {{ my project title }}
+# {{ Bring Joy to the Feline Friends of Kitty Cat Island: Tsunami Relief Fund }}
 
-{{ a paragraph detailing the purpose and target audience }}
+{{ "Meow! Help! Emergency on Kitty Cat Island! Tsunami has struck and many of our homes have been destroyed. We need your help to rebuild and care for all of our feline friends. Please donate what you can, every little bit helps. We need food, shelter, and medical care. Thank you for your kindness and generosity. Together, we can make Kitty Cat Island a safe and comfortable place for all of us cats. Purr-lease help! Meow!" }}
 
 ## Features
 
@@ -34,7 +34,7 @@
 - Project
   - [X] Create
   - [X] Retrieve
-  - [X Update
+  - [X] Update
   - [X] Destroy
 - Pledge
   - [X] Create
@@ -44,27 +44,27 @@
 - User
   - [X] Create
   - [X] Retrieve
-  - [ ] Update --> Not allowed for better record keeping purposes
-  - [ ] Destroy --> --> Not allowed for better record keeping purposes
+  - [X] Update
+  - [ ] Destroy --> not allowed for better record keeping purposes
 
 ### Implement suitable permissions
 
 **Note: Not all of these may be required for your project, if you have not included one of these please justify why.**
 
 - Project
-  - [ ] Limit who can create
-  - [ ] Limit who can retrieve --> For transparency purposes, anyone should be able to view all projects
-  - [ ] Limit who can update
-  - [ ] Limit who can delete
+  - [x] Limit who can create --> only logged in user can create
+  - [ ] Limit who can retrieve --> for transparency purposes, anyone should be able to view all projects
+  - [x] Limit who can update --> only admin can update
+  - [x] Limit who can delete --> only admin can delete
 - Pledge
-  - [ ] Limit who can create
-  - [ ] Limit who can retrieve --> For transparency purposes, anyone should be able to view all pledges
-  - [ ] Limit who can update
-  - [ ] Limit who can delete
+  - [ ] Limit who can create --> both logged in/anonymous users can pledge
+  - [ ] Limit who can retrieve --> for transparency purposes, anyone should be able to view all pledges
+  - [x] Limit who can update --> only admin can update, supporter cannot change their mind once they've donated
+  - [x] Limit who can delete --> only admin can delete, supporter cannot change their mind once they've donated
 - User
-  - [ ] Limit who can retrieve --> For transparency purposes, anyone should be able to view all users
-  - [ ] Limit who can update
-  - [ ] Limit who can delete
+  - [ ] Limit who can retrieve --> for transparency purposes, anyone should be able to view all users
+  - [x] Limit who can update --> user can only update password of their own account
+  - [ ] Limit who can delete --> not allowed for better record keeping purposes
 
 ### Implement relevant status codes
 
