@@ -34,18 +34,18 @@
 - Project
   - [X] Create
   - [X] Retrieve
-  - [ ] Update
-  - [ ] Destroy
+  - [X Update
+  - [X] Destroy
 - Pledge
   - [X] Create
   - [X] Retrieve
-  - [ ] Update
-  - [ ] Destroy
+  - [X] Update
+  - [X] Destroy
 - User
-  - [ ] Create
+  - [X] Create
   - [X] Retrieve
-  - [ ] Update
-  - [ ] Destroy
+  - [ ] Update --> Not allowed for better record keeping purposes
+  - [ ] Destroy --> --> Not allowed for better record keeping purposes
 
 ### Implement suitable permissions
 
@@ -53,28 +53,28 @@
 
 - Project
   - [ ] Limit who can create
-  - [ ] Limit who can retrieve
+  - [ ] Limit who can retrieve --> For transparency purposes, anyone should be able to view all projects
   - [ ] Limit who can update
   - [ ] Limit who can delete
 - Pledge
   - [ ] Limit who can create
-  - [ ] Limit who can retrieve
+  - [ ] Limit who can retrieve --> For transparency purposes, anyone should be able to view all pledges
   - [ ] Limit who can update
   - [ ] Limit who can delete
-- Pledge
-  - [ ] Limit who can retrieve
+- User
+  - [ ] Limit who can retrieve --> For transparency purposes, anyone should be able to view all users
   - [ ] Limit who can update
   - [ ] Limit who can delete
 
 ### Implement relevant status codes
 
-- [ ] Get returns 200
-- [ ] Create returns 201
-- [ ] Not found returns 404
+- [x] Get returns 200
+- [x] Create returns 201
+- [x] Not found returns 404
 
 ### Handle failed requests gracefully 
 
-- [ ] 404 response returns JSON rather than text
+- [x] 404 response returns JSON rather than text
 
 ### Use token authentication
 

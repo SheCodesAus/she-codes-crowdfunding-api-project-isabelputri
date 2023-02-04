@@ -16,7 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.authtoken.views import obtain_auth_token
+
 from django.http import JsonResponse
+
+def blanket_404_response(request, exception):
+    return JsonResponse({
+        'status_code': 404,
+        'error': "404 Error - Please try again."
+        })
+        
+handler404 = blanket_404_response
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,10 +34,3 @@ urlpatterns = [
     path("", include('projects.urls')),
     path('api-token-auth/', obtain_auth_token, name='api_token_auth')
 ]
-
-def blanket_404_response(request, exception):
-    return JsonResponse({
-        'status_code': 404,
-        'error': "404 Error, you've gotten lost,go back and try again"
-        })
-handler404 = blanket_404_response

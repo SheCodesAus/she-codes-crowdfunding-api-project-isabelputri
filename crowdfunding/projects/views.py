@@ -6,7 +6,7 @@ from rest_framework import status, generics, permissions
 
 from .models import Project, Pledge
 from .serializers import ProjectSerializer, PledgeSerializer, ProjectDetailSerializer
-from .permissions import IsOwnerOrReadOnly
+from .permissions import IsOwnerOrReadOnly, IsSupporterOrReadOnly
 
 # . refers to the directory
 
@@ -63,9 +63,24 @@ class ProjectDetail(APIView):
                 return Response(serializer.data)
             return Response(serializer.errors)
 
+    def delete(self, request, pk, format=None):
+        snippet = self.get_object(pk)
+        snippet.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
 class PledgeList(generics.ListCreateAPIView):
     queryset= Pledge.objects.all()
     serializer_class = PledgeSerializer
 
     def perform_create(self, serializer):
         serializer.save(supporter=self.request.user)
+
+class PledgeDetailView(generics.RetrieveUpdateDestroyAPIView):
+
+    permission_classes = [
+        permissions.IsAuthenticatedOrReadOnly,
+        IsSupporterOrReadOnly
+    ]
+
+    queryset = Pledge.objects.all()
+    serializer_class = PledgeSerializer
