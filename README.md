@@ -1,6 +1,8 @@
 # {{ Bring Joy to the Feline Friends of Kitty Cat Island: Tsunami Relief Fund }}
 
-{{ "Meow! Help! Emergency on Kitty Cat Island! Tsunami has struck and many of our homes have been destroyed. We need your help to rebuild and care for all of our feline friends. Please donate what you can, every little bit helps. We need food, shelter, and medical care. Thank you for your kindness and generosity. Together, we can make Kitty Cat Island a safe and comfortable place for all of us cats. Purr-lease help! Meow!" }}
+{{ "Meow! Help! Emergency on Kitty Cat Island! Tsunami has struck and many of our homes have been destroyed. We need your help to rebuild and care for all of our feline friends. Please donate what you can, every little bit helps. We need funds to provide food, shelter, and medical care. Thank you for your kindness and generosity. Together, we can make Kitty Cat Island a safe and comfortable place for all of us cats. Purr-lease help! Meow!" }}
+
+Target audience: Resident, friends and families, cat lovers - Australia and beyond
 
 ## Features
 
@@ -52,19 +54,19 @@
 **Note: Not all of these may be required for your project, if you have not included one of these please justify why.**
 
 - Project
-  - [x] Limit who can create --> only logged in user can create
+  - [x] Limit who can create
   - [ ] Limit who can retrieve --> for transparency purposes, anyone should be able to view all projects
-  - [x] Limit who can update --> only admin can update
-  - [x] Limit who can delete --> only admin can delete
+  - [x] Limit who can update
+  - [x] Limit who can delete
 - Pledge
-  - [ ] Limit who can create --> both logged in/anonymous users can pledge
+  - [x] Limit who can create
   - [ ] Limit who can retrieve --> for transparency purposes, anyone should be able to view all pledges
   - [x] Limit who can update --> only admin can update, supporter cannot change their mind once they've donated
   - [x] Limit who can delete --> only admin can delete, supporter cannot change their mind once they've donated
 - User
   - [ ] Limit who can retrieve --> for transparency purposes, anyone should be able to view all users
-  - [x] Limit who can update --> user can only update password of their own account
-  - [ ] Limit who can delete --> not allowed for better record keeping purposes
+  - [x] Limit who can update --> user can only update the password(s) of their own account
+  - [x] Limit who can delete --> not allowed for better record keeping purposes
 
 ### Implement relevant status codes
 
@@ -82,9 +84,9 @@
 
 ## Additional features
 
-- [ ] {Title Feature 1}
+- [X] {Reset password}
 
-{{ description of feature 1 }}
+{{ Any logged in user will be able to reset their account's password }}
 
 - [ ] {Title Feature 2}
 
