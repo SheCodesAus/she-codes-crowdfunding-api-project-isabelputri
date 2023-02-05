@@ -4,6 +4,7 @@
 
 Target audience: Resident, friends and families, cat lovers - Australia and beyond
 
+Submission file: https://docs.google.com/document/d/1kc9b_IF-FPE1cbPPRf9WNz-HhDhWmkKU55lK-IIR5TE/edit?usp=sharing/
 ## Features
 
 ### User Accounts
@@ -61,12 +62,12 @@ Target audience: Resident, friends and families, cat lovers - Australia and beyo
 - Pledge
   - [x] Limit who can create
   - [ ] Limit who can retrieve --> for transparency purposes, anyone should be able to view all pledges
-  - [x] Limit who can update --> only admin can update, supporter cannot change their mind once they've donated
-  - [x] Limit who can delete --> only admin can delete, supporter cannot change their mind once they've donated
+  - [x] Limit who can update
+  - [x] Limit who can delete
 - User
   - [ ] Limit who can retrieve --> for transparency purposes, anyone should be able to view all users
-  - [x] Limit who can update --> user can only update the password(s) of their own account
-  - [x] Limit who can delete --> not allowed for better record keeping purposes
+  - [x] Limit who can update
+  - [x] Limit who can delete
 
 ### Implement relevant status codes
 
@@ -84,9 +85,9 @@ Target audience: Resident, friends and families, cat lovers - Australia and beyo
 
 ## Additional features
 
-- [X] {Reset password}
+- [X] {Change password}
 
-{{ Any logged in user will be able to reset their account's password }}
+{{ Any logged in user will be able to change their account's password }}
 
 - [ ] {Title Feature 2}
 
@@ -103,10 +104,10 @@ Target audience: Resident, friends and families, cat lovers - Australia and beyo
 
 ## Part A Submission
 
-- [ ] A link to the deployed project.
-- [ ] A screenshot of Insomnia, demonstrating a successful GET method for any endpoint.
-- [ ] A screenshot of Insomnia, demonstrating a successful POST method for any endpoint.
-- [ ] A screenshot of Insomnia, demonstrating a token being returned.
+- [X A link to the deployed project. (small-smoke-3626.fly.dev/)
+- [X] A screenshot of Insomnia, demonstrating a successful GET method for any endpoint.
+- [X] A screenshot of Insomnia, demonstrating a successful POST method for any endpoint.
+- [X] A screenshot of Insomnia, demonstrating a token being returned.
 - [ ] Your refined API specification and Database Schema.
 
 ### Step by step instructions for how to register a new user and create a new project (i.e. endpoints and body data).
