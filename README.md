@@ -48,7 +48,7 @@ Submission file: https://docs.google.com/document/d/1kc9b_IF-FPE1cbPPRf9WNz-HhDh
   - [X] Create
   - [X] Retrieve
   - [X] Update
-  - [ ] Destroy --> not allowed for better record keeping purposes
+  - [X] Destroy
 
 ### Implement suitable permissions
 
@@ -89,7 +89,7 @@ Submission file: https://docs.google.com/document/d/1kc9b_IF-FPE1cbPPRf9WNz-HhDh
 
 {{ Any logged in user will be able to change their account's password }}
 
-- [ ] {Title Feature 2}
+- [X] {Title Feature 2}
 
 {{ description of feature 2 }}
 

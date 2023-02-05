@@ -90,19 +90,3 @@ class ChangePasswordView(generics.UpdateAPIView):
             return Response(response)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-class CustomUserDetail(APIView):
-    permission_classes = [
-        permissions.IsAuthenticatedOrReadOnly,
-        IsOwnerOrReadOnly
-    ]
-    def get_object(self, pk):
-        try:
-            return CustomUser.objects.get(pk=pk)
-        except CustomUser.DoesNotExist:
-            raise Http404
-
-    def get(self, request, pk):
-        user = self.get_object(pk)
-        serializer = CustomUserSerializer(user)
-        return Response(serializer.data)
