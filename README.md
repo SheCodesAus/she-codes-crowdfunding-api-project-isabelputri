@@ -89,11 +89,11 @@ Submission file: https://docs.google.com/document/d/1kc9b_IF-FPE1cbPPRf9WNz-HhDh
 
 {{ Any logged in user will be able to change their account's password }}
 
-- [X] {Title Feature 2}
+- [X] {Title Feature 2} - Coming soon
 
 {{ description of feature 2 }}
 
-- [ ] {Title Feature 3}
+- [ ] {Title Feature 3} - Coming soon
 
 {{ description of feature 3 }}
 
