@@ -2,7 +2,8 @@ from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.http import Http404
-from rest_framework import status, generics, permissions
+from rest_framework import status, generics, permissions, filters
+from django_filters.rest_framework import DjangoFilterBackend
 
 from .models import Project, Pledge
 from .serializers import ProjectSerializer, PledgeSerializer, ProjectDetailSerializer
@@ -71,6 +72,8 @@ class ProjectDetail(APIView):
 class PledgeList(generics.ListCreateAPIView):
     queryset= Pledge.objects.all()
     serializer_class = PledgeSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['anonymous','project']    
 
     def perform_create(self, serializer):
         serializer.save(supporter=self.request.user)

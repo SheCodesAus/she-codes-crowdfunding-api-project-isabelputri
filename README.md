@@ -89,9 +89,9 @@ Submission file: https://docs.google.com/document/d/1kc9b_IF-FPE1cbPPRf9WNz-HhDh
 
 {{ Any logged in user will be able to change their account's password }}
 
-- [X] {Title Feature 2} - Coming soon
+- [X] {Total amount of pledges for a project}
 
-{{ description of feature 2 }}
+{{ Showing total amount of pledges for each project }}
 
 - [ ] {Title Feature 3} - Coming soon
 
