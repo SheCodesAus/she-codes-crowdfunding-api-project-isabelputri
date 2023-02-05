@@ -48,7 +48,7 @@ Submission file: https://docs.google.com/document/d/1kc9b_IF-FPE1cbPPRf9WNz-HhDh
   - [X] Create
   - [X] Retrieve
   - [X] Update
-  - [ ] Destroy --> not allowed for better record keeping purposes
+  - [X] Destroy
 
 ### Implement suitable permissions
 
@@ -89,7 +89,7 @@ Submission file: https://docs.google.com/document/d/1kc9b_IF-FPE1cbPPRf9WNz-HhDh
 
 {{ Any logged in user will be able to change their account's password }}
 
-- [ ] {Title Feature 2}
+- [X] {Title Feature 2}
 
 {{ description of feature 2 }}
 
@@ -104,11 +104,11 @@ Submission file: https://docs.google.com/document/d/1kc9b_IF-FPE1cbPPRf9WNz-HhDh
 
 ## Part A Submission
 
-- [X A link to the deployed project. (small-smoke-3626.fly.dev/)
+- [X] A link to the deployed project. (small-smoke-3626.fly.dev/)
 - [X] A screenshot of Insomnia, demonstrating a successful GET method for any endpoint.
 - [X] A screenshot of Insomnia, demonstrating a successful POST method for any endpoint.
 - [X] A screenshot of Insomnia, demonstrating a token being returned.
-- [ ] Your refined API specification and Database Schema.
+- [X] Your refined API specification and Database Schema.
 
 ### Step by step instructions for how to register a new user and create a new project (i.e. endpoints and body data).
 
@@ -116,24 +116,24 @@ Submission file: https://docs.google.com/document/d/1kc9b_IF-FPE1cbPPRf9WNz-HhDh
 
 ```shell
 curl --request POST \
-  --url http://127.0.0.1:8000/users/ \
+  --url http://localhost:8000/users/ \
   --header 'Content-Type: application/json' \
-  --data '{
-	"username": "testuser",
-	"email": "not@myemail.com",
-	"password": "not-my-password"
-}'
+  --data '    {
+        "email": "test2@test.com",
+        "username": "test2",
+        "password": "test2"
+    }'
 ```
 
 2. Sign in User
 
 ```shell
 curl --request POST \
-  --url http://127.0.0.1:8000/api-token-auth/ \
+  --url http://localhost:8000/api-token-auth/ \
   --header 'Content-Type: application/json' \
   --data '{
-	"username": "testuser",
-	"password": "not-my-password"
+  "username":"test",
+  "password": "test"
 }'
 ```
 
@@ -141,15 +141,16 @@ curl --request POST \
 
 ```shell
 curl --request POST \
-  --url http://127.0.0.1:8000/projects/ \
-  --header 'Authorization: Token 5b8c82ec35c8e8cb1fac24f8eb6d480a367f322a' \
+  --url http://localhost:8000/projects/ \
+  --header 'Authorization: Token d937ed9164712ae30c4ec4ff1d492839c1f53c00' \
   --header 'Content-Type: application/json' \
   --data '{
-	"title": "Donate a cat",
-	"description": "Please help, we need a cat for she codes plus, our class lacks meows.",
-	"goal": 1,
+	"id": 1,
+	"title": "Help the Feline Friends of Kitty Cat Island: Tsunami Relief Fund",
+	"description": "Purr-lease consider donating to provide food, shelter, and medical aid to the feline friends affected by this tragedy",
+	"goal": 100,
 	"image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Dollar_bill_and_small_change.jpg",
 	"is_open": true,
-	"date_created": "2023-01-28T05:53:46.113Z"
+	"date_created": "2023-02-04T15:40:05.260980Z"
 }'
 ```
